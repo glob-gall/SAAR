@@ -1,5 +1,5 @@
 #pragma once
-#include "../../Enum/ITEM_TAMANHO.hpp"
+#include "TAMANHO.hpp"
 #include "../Categoria/interface.hpp"
 
 class Item {
@@ -7,7 +7,7 @@ class Item {
   char* nome;
   double preco;
   char* descricao;
-  ITEM_TAMANHO tamanho;
+  TAMANHO tamanho;
   char* enderecoVideo;
   Categoria* categoria;
   
@@ -17,7 +17,7 @@ class Item {
     char* nome,
     double preco,
     char* descricao,
-    ITEM_TAMANHO tamanho,
+    TAMANHO tamanho,
     char* enderecoVideo,
     Categoria* categoria
   );

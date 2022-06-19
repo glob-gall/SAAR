@@ -1,12 +1,12 @@
 #pragma once
-#include "../../Enum/MESA_STATUS.hpp"
-
+#include "STATUS.hpp"
+#include "../Cardapio/interface.hpp"
+#include "../Comanda/interface.hpp"
 class Mesa {
   int id;
-  MESA_STATUS status;
-  Cardapio cardapio;
-  Comanda comanda;
-  Atendimanto* atendimentos;
+  STATUS status;
+  Cardapio* cardapio;
+  Comanda* comanda;
 
   public:
   void iniciarComanda();
