@@ -1,0 +1,5 @@
+enum class MESA_STATUS {
+  ABERTO,
+  FECHADO,
+  EM_ESPERA,
+};
