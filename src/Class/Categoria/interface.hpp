@@ -1,10 +1,15 @@
 #pragma once
-
+#include <string>
+#include <vector>
+#include <iostream>
+#include "../Item/interface.hpp"
 class Categoria{
-  char* nome;
-  Item* itens;
+  std::string nome;
+  std::vector<Item> itens;
+
   public:
-  Categoria(Item*);
+  Categoria(std::string nome);
   
-  Item* verItens();
+  void verItens();
+  std::string getNome();
 };

@@ -1,27 +1,34 @@
 #pragma once
 #include "TAMANHO.hpp"
 #include "../Categoria/interface.hpp"
+#include <string>
+#include <vector>
+
+class Categoria;
 
 class Item {
+  private:
   int id;
-  char* nome;
+  std::string nome;
   double preco;
-  char* descricao;
+  std::string descricao;
   TAMANHO tamanho;
-  char* enderecoVideo;
+  std::string enderecoVideo;
   Categoria* categoria;
   
   public:
   Item(
     int id,
-    char* nome,
+    std::string nome,
     double preco,
-    char* descricao,
+    std::string descricao,
     TAMANHO tamanho,
-    char* enderecoVideo,
+    std::string enderecoVideo,
     Categoria* categoria
   );
 
-  char* getNome();
   double getPreco();
+  int getId();
+  std::string getCategoria();
+  std::string getNome();
 };

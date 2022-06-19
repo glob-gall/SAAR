@@ -1,14 +1,19 @@
+#pragma once
+#include "../Categoria/interface.hpp"
+#include "../Item/interface.hpp"
+#include <vector>
+#include <iostream>
+#include <string>
 class Cardapio {
-  Categoria* categorias;
-  Item* itens;
+  std::vector<Categoria> categorias;
+  std::vector<Item> itens;
   
   public:
-  Cardapio(Categoria*,Item*);
+  Cardapio(std::vector<Categoria>,std::vector<Item>);
 
   void verCategorias();
   void verItens();
-  void verItens(Categoria*);
-  void verItens(char* categoria);
-  Item* escolherItem(Item*);
-  Item* escolherItem(char* nome);
+  void verItens(std::string nomeCategoria);
+  Item* escolherItem(int id);
+  Item* escolherItem(std::string);
 };
