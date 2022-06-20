@@ -8,7 +8,8 @@ class CategoriaMng {
 
   public:
   std::vector<Categoria> listarCategorias();
-  Categoria* get();
+  Categoria* get(std::string nome);
+  Categoria* get(int id);
   bool criar(Categoria);
   bool alterar(Categoria);
   bool remover(Categoria);

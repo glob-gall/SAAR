@@ -18,12 +18,13 @@ void testCategoria(){
   std::cout << "AAAAAAAAAAAAAAAAAAAAA\n";
   std::string catNome = "sopas";
   Categoria* sopas = new Categoria(catNome);
+
+  std::cout << "categoria: " << sopas->getNome() << "\n";
+  sopas->verItens();
 }
 
 int main(){
 
-  // std::cout << "categoria: " << sopas->getNome() << "\n";
-  // sopas->verItens();
 
   // Item* sopa = new Item(
   //   1,// int id,

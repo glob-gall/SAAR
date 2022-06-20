@@ -14,5 +14,5 @@ class Comanda {
   public:
   void adicionarPedido(Item*);
 
-  void verComanda();
+  void ver();
 };

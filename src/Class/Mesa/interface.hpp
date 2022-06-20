@@ -5,13 +5,16 @@
 class Mesa {
   int id;
   STATUS_MESA status;
-  Cardapio* cardapio;
   Comanda* comanda;
+  Cardapio* cardapio;
 
   public:
   Mesa(Cardapio*);
   void iniciarComanda();
   void chamarGarcom();
-  void visualizarCardapio();
-  void fazerPedido();
+  void verCardapio();
+  void verCategoria();
+  void verItem();
+  void fazerPedido(int idItem);
+  void fazerPedido(std::string nomeItem);
 };

@@ -8,7 +8,7 @@ class MesaMng {
 
   public:
   std::vector<Mesa> listarMesas();
-  Mesa* get();
+  Mesa* get(int id);
   bool criar(Mesa);
   bool alterar(Mesa);
   bool remover(Mesa);

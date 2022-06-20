@@ -15,5 +15,5 @@ class Cardapio {
   void verItens();
   void verItens(std::string nomeCategoria);
   Item* escolherItem(int id);
-  Item* escolherItem(std::string);
+  Item* escolherItem(std::string nome);
 };
