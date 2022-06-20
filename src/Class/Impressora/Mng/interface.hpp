@@ -14,4 +14,6 @@ class ImpressoraMng {
   bool alterar(Impressora);
   bool remover(Impressora);
   bool removerPorId(int id);
+  bool imprimir(Item);
+
 };

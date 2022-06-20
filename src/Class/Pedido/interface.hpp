@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "../Item/interface.hpp"
+#include "../Impressora/interface.hpp"
 
 class Pedido {
   int numero;
