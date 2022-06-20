@@ -7,6 +7,7 @@
 #include "../Caixa/Mng/interface.hpp"
 #include "../Comanda/Mng/interface.hpp"
 #include "../Impressora/Mng/interface.hpp"
+
 class Gerente {
   Funcionario funcionario;
   ItemMng* itemMng;

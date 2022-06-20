@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "../Caixa/TIPO_PAGAMENTO.hpp"
 #include "STATUS.hpp"
 #include "../Item/interface.hpp"
@@ -9,10 +10,10 @@ class Comanda {
   char* dataHoraPagamento;
   TIPO_PAGAMENTO tipoPagamento;
   STATUS status;
-  Pedido* pedidos;
+  std::vector<Pedido> pedidos;
 
   public:
-  void adicionarPedido(Item*);
+  void adicionarPedido(Item);
 
   void ver();
 };

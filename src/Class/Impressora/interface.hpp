@@ -5,6 +5,7 @@
 class Impressora {
   int id;
   STATUS_IMPRESSORA status;
+  Categoria* categoria;
   public:
   void receber(Item);
 };

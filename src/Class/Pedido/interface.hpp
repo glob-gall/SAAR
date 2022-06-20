@@ -1,14 +1,15 @@
 #pragma once
 #include <string>
+#include <vector>
 #include "../Item/interface.hpp"
 #include "../Impressora/interface.hpp"
 
 class Pedido {
   int numero;
   Item* item;
-  Item* adicionais;
   std::string DataHora;
   std::string observacoes;
+  std::vector<Impressora> impressoras;
 
   public:
   Pedido(Item* item);

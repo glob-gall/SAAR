@@ -13,10 +13,12 @@ class Mesa {
   public:
   Mesa(Cardapio*);
   void iniciarComanda();
-  void chamarGarcom();
+  bool chamarGarcom();
   void verCardapio();
   void verCategoria();
-  void verItem();
-  void fazerPedido(int idItem);
-  void fazerPedido(std::string nomeItem);
+  void verComanda();
+  void verItemDetalhes(int idItem);
+  void verItemDetalhes(std::string nomeItem);
+  bool fazerPedido(int idItem);
+  bool fazerPedido(std::string nomeItem);
 };
