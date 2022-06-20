@@ -12,10 +12,14 @@ void Mesa::chamarGarcom(){
 
 };
 
-void Mesa::visualizarCardapio(){
+void Mesa::verItem(){
 
 };
 
-void Mesa::fazerPedido(){
+void fazerPedido(int idItem){
+
+};
+
+void fazerPedido(std::string nomeItem){
 
 };

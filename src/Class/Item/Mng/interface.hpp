@@ -7,7 +7,7 @@ class ItemMng {
   ItemDao* itemDao;
 
   public:
-  std::vector<Item> listarItens();
+  std::vector<Item> listar();
   Item* get(std::string nome);
   Item* get(int id);
   bool criar(Item);

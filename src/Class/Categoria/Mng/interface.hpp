@@ -7,7 +7,7 @@ class CategoriaMng {
   CategoriaDao* categoriaDao;
 
   public:
-  std::vector<Categoria> listarCategorias();
+  std::vector<Categoria> listar();
   Categoria* get(std::string nome);
   Categoria* get(int id);
   bool criar(Categoria);

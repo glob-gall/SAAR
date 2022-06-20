@@ -6,7 +6,7 @@ class ItemDao {
   std::vector<Item> itens;
 
   public:
-  std::vector<Item> listItens();
+  std::vector<Item> listar();
   Item* get();
   bool criar(Item);
   bool alterar(Item);

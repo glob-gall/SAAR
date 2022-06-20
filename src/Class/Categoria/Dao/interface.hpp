@@ -7,7 +7,7 @@ class CategoriaDao {
   std::vector<Categoria> categorias;
 
   public:
-  std::vector<Categoria> listCategorias();
+  std::vector<Categoria> listar();
   Categoria* get();
   bool criar(Categoria);
   bool alterar(Categoria);

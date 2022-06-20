@@ -6,7 +6,7 @@ class FuncionarioDao {
   std::vector<Funcionario> funcionario;
 
   public:
-  std::vector<Funcionario> listFuncionarios();
+  std::vector<Funcionario> listar();
   Funcionario* get();
   bool criar(Funcionario);
   bool alterar(Funcionario);

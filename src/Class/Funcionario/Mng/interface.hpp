@@ -7,7 +7,7 @@ class FuncionarioMng {
   FuncionarioDao* funcionarioDao;
 
   public:
-  std::vector<Funcionario> listarItens();
+  std::vector<Funcionario> listar();
   Funcionario* get();
   bool criar(Funcionario);
   bool alterar(Funcionario);

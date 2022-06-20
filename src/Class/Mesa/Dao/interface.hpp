@@ -6,7 +6,7 @@ class MesaDao {
   std::vector<Mesa> mesas;
 
   public:
-  std::vector<Mesa> listarMesas();
+  std::vector<Mesa> listar();
   Mesa* get();
   bool criar(Mesa);
   bool alterar(Mesa);
