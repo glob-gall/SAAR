@@ -8,16 +8,19 @@
 // #include "src/Class/Garcom/interface.hpp"
 // #include "src/Class/Gerente/interface.hpp"
 // #include "src/Class/Impressora/interface.hpp"
-#include "src/Class/Cardapio/interface.hpp"
-#include "src/Class/Item/interface.hpp"
-#include "src/Class/Mesa/interface.hpp"
-#include "src/Class/Pedido/interface.hpp"
+// #include "src/Class/Pedido/interface.hpp"
+// #include "src/Class/Cardapio/interface.hpp"
+// #include "src/Class/Item/interface.hpp"
+// #include "src/Class/Mesa/interface.hpp"
+
+void testCategoria(){
+  std::cout << "AAAAAAAAAAAAAAAAAAAAA\n";
+  std::cout << "AAAAAAAAAAAAAAAAAAAAA\n";
+  std::string catNome = "sopas";
+  Categoria* sopas = new Categoria(catNome);
+}
 
 int main(){
-
-  std::cout << "AAAAAAAAAAAAAAAAAAAAA\n";
-  std::cout << "AAAAAAAAAAAAAAAAAAAAA\n";
-  Categoria* sopas = new Categoria("sopas");
 
   // std::cout << "categoria: " << sopas->getNome() << "\n";
   // sopas->verItens();

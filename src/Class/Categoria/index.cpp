@@ -10,7 +10,9 @@ std::string Categoria::getNome(){
 }
 
 void Categoria::verItens(){
+  std::cout << "========== Itens da categoria " << this->getNome() << "\n";
   for (int i = 0; i < this->itens.size(); i++){
-    std::cout<< this->itens[i].getId() << "-" << this->itens[i].getId() << "\n";
+    std::cout << 
+    this->itens[i].getId() << "-" << this->itens[i].getId() << "\n";
   }
 }

@@ -1,12 +1,13 @@
 #pragma once
+#include <string>
 #include "../Item/interface.hpp"
 
 class Pedido {
   int numero;
   Item* item;
   Item* adicionais;
-  char* DataHora;
-  char* observacoes;
+  std::string DataHora;
+  std::string observacoes;
 
   public:
   Pedido(Item* item);
