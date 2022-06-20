@@ -2,9 +2,11 @@
 #include <vector>
 #include "../interface.hpp"
 #include "../Dao/interface.hpp"
+#include "../../Impressora/Mng/interface.hpp"
 
 class ComandaMng {
   ComandaDao* ComandaDao;
+  ImpressoraMng* impressoraMng;
 
   public:
   std::vector<Comanda> listar();
@@ -14,4 +16,5 @@ class ComandaMng {
   bool alterar(Comanda);
   bool remover(Comanda);
   bool removerPorId(int id);
+  bool enviarParaImpressora(Pedido);
 };
