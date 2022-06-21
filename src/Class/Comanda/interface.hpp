@@ -13,7 +13,7 @@ class Comanda {
   std::vector<Pedido> pedidos;
 
   public:
-  void adicionarPedido(Item);
+  void adicionarPedido(Item,std::string observacoes);
 
   void ver();
 };

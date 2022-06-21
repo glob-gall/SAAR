@@ -7,7 +7,7 @@ class ComandaDao {
 
   public:
   std::vector<Comanda> listar();
-  Comanda* get();
+  Comanda* buscarPorId(int id);
   bool criar(Comanda);
   bool alterar(Comanda);
   bool remover(Comanda);
