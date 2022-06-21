@@ -12,4 +12,5 @@ class MesaDao {
   bool alterar(Mesa);
   bool remover(Mesa);
   bool removerPorId(int id);
+  Mesa* buscarPorComandaId(int comandaId);
 };

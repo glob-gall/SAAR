@@ -1,13 +1,11 @@
 #pragma once
 #include "STATUS_MESA.hpp"
 #include "../Cardapio/interface.hpp"
-#include "../Comanda/Mng/interface.hpp"
 #include "../Painel/interface.hpp"
 
 class Mesa {
   int id;
   STATUS_MESA status;
-  ComandaMng* comandaMng;
   Cardapio* cardapio;
   Painel* painel;
 

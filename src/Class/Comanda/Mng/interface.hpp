@@ -17,4 +17,5 @@ class ComandaMng {
   bool remover(Comanda);
   bool removerPorId(int id);
   bool enviarParaImpressora(Pedido);
+  bool registrarMetodoPagamento(TIPO_PAGAMENTO, int comandaId);
 };
